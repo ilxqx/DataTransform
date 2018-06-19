@@ -50,5 +50,6 @@ You only need to modify the config.json file to run this tool.
   }
 }
 ```
-Although this tool is quite simple, it is powful.
-Believe after looking the comment in config.json file below, you know how to use it.
+> Although this tool is quite simple, it is powful.
+
+> Believe after looking the comment in config.json file above, you know how to use it.
