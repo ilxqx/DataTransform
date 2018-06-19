@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "async": "^2.6.1",
+    "mysql": "^2.15.0"
+  }
+}
