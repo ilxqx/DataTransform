@@ -1,59 +1,39 @@
 {
   "source": {
-    "host": "www.ilxqx.com",
-    "user": "admin",
-    "password": "admin@venus?8364731228",
-    "port": 5210,
-    "database": "caanet"
+    "host": "domain",
+    "user": "user",
+    "password": "password",
+    "port": 3306,
+    "database": "source"
   },
   "destination": {
-    "host": "www.ilxqx.com",
-    "user": "admin",
-    "password": "admin@venus?8364731228",
-    "port": 5210,
-    "database": "art"
+    "host": "destinationDomain",
+    "user": "user",
+    "password": "password",
+    "port": 3306,
+    "database": "destination"
   },
-  "sourceTable": "membersresume",
+  "sourceTable": "sourceTable",
   "destinationTable": {
-    "name": "resume",
+    "name": "destinationTable",
     "assert": {
-      "year5": "not null"
+      "field": "not null"
     },
     "fields": [
       {
-        "name": "hyid",
+        "name": "field",
         "valueType": "destinationQuery",
-        "value": "SELECT `id` FROM `hyinfo` WHERE `username` = ${username}"
+        "value": "SELECT `id` FROM `someTable` WHERE `username` = ${username}"
       },
       {
-        "name": "qsnf",
+        "name": "fieldTwo",
         "valueType": "reference",
-        "value": "year5"
+        "value": "refField"
       },
       {
-        "name": "jznf",
-        "valueType": "reference",
-        "value": "yearend5"
-      },
-      {
-        "name": "dw",
-        "valueType": "reference",
-        "value": "place5"
-      },
-      {
-        "name": "gznr",
-        "valueType": "reference",
-        "value": "content5"
-      },
-      {
-        "name": "shxl",
-        "valueType": "reference",
-        "value": "jobtitle5"
-      },
-      {
-        "name": "zw",
-        "valueType": "reference",
-        "value": "jobtitleend4"
+        "name": "fieldThree",
+        "valueType": "custom",
+        "value": "customValue"
       }
     ]
   }
