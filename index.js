@@ -26,6 +26,10 @@ const strategies = {
     reference: (fieldInfo, curRowData, cb) => {
         cb(null, curRowData[fieldInfo.value]);
     },
+    // 枚举替换
+    enumReplace: (fieldInfo, curRowData, cb) => {
+        cb(null, fieldInfo.enum[curRowData[fieldInfo.value]]);
+    },
     // 源数据库查询
     sourceQuery: (fieldInfo, curRowData, cb) => {
         // 编译sql语句
