@@ -34,6 +34,17 @@
         "name": "fieldThree",
         "valueType": "custom",
         "value": "customValue"
+      },
+      {
+        "name": "fieldFour",
+        "valueType": "enumReplace",
+        "value": "category",
+        "enum": {
+          "1": "类别1",
+          "2": "类别2",
+          "3": "类别3",
+          "4": "类别4"
+        }
       }
     ]
   }
